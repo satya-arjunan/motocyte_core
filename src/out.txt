@@ -1,0 +1,49 @@
+HDF5Interface.hpp:template <> inline hid_t HDF5Interface::hdf5_type<float>() {
+pugixml.cpp:#	include <float.h>
+pugixml.cpp:	PUGI__FN float get_value_float(const char_t* value)
+pugixml.cpp:		return static_cast<float>(wcstod(value, 0));
+pugixml.cpp:		return static_cast<float>(strtod(value, 0));
+pugixml.cpp:	PUGI__FN bool set_value_convert(String& dest, Header& header, uintptr_t header_mask, float value)
+pugixml.cpp:	PUGI__FN float xml_attribute::as_float(float def) const
+pugixml.cpp:		return (_attr && _attr->value) ? impl::get_value_float(_attr->value) : def;
+pugixml.cpp:	PUGI__FN xml_attribute& xml_attribute::operator=(float rhs)
+pugixml.cpp:	PUGI__FN bool xml_attribute::set_value(float rhs)
+pugixml.cpp:	PUGI__FN float xml_text::as_float(float def) const
+pugixml.cpp:		return (d && d->value) ? impl::get_value_float(d->value) : def;
+pugixml.cpp:	PUGI__FN bool xml_text::set(float rhs)
+pugixml.cpp:	PUGI__FN xml_text& xml_text::operator=(float rhs)
+pugixml.cpp:		PUGI__STATIC_ASSERT(sizeof(float) == sizeof(uint32_t));
+pugixml.cpp:		union { float f; UI i; } u;
+TrackSpecies.hpp:  virtual std::vector<Vector<float>> get_initial_xyz_list();
+grep: input file ‘out.txt’ is also the output
+pugixml.hpp:		float as_float(float def = 0) const;
+pugixml.hpp:		bool set_value(float rhs);
+pugixml.hpp:		xml_attribute& operator=(float rhs);
+pugixml.hpp:		float as_float(float def = 0) const;
+pugixml.hpp:		bool set(float rhs);
+pugixml.hpp:		xml_text& operator=(float rhs);
+demos/homogeneous_crw_jorge_data.walker.hpp:typedef const Vector<float> (Walker::*DisplaceMethod)(const unsigned);
+demos/homogeneous_crw_jorge_data.walker.hpp:  const Vector<float> get_displacement(const unsigned);
+demos/homogeneous_crw_jorge_data.walker.hpp:  float step();
+demos/homogeneous_crw_jorge_data.walker.hpp:  const Vector<float> get_random_displacement(const unsigned);
+demos/homogeneous_crw_jorge_data.walker.hpp:  const Vector<float> get_directed_displacement(const unsigned);
+demos/homogeneous_crw_jorge_data.walker.hpp:  const Vector<float> get_homogeneous_crw_displacement(const unsigned agent_id);
+demos/homogeneous_crw_jorge_data.walker.hpp:  std::vector<Vector<float>>& get_directions();
+demos/homogeneous_crw_jorge_data.walker.hpp:  virtual void set_interval(float);
+demos/homogeneous_crw_jorge_data.walker.hpp:  const float speed_mean_ = 0.115;
+demos/homogeneous_crw_jorge_data.walker.hpp:  const float speed_std_ = 0.3;
+demos/homogeneous_crw_jorge_data.walker.hpp:  const float roll_rate_mean_ = -1.0; 
+demos/homogeneous_crw_jorge_data.walker.hpp:  const float roll_rate_std_ = 0.0; 
+demos/homogeneous_crw_jorge_data.walker.hpp:  const float pitch_rate_mean_ = 0.0;
+demos/homogeneous_crw_jorge_data.walker.hpp:  const float pitch_rate_std_ = 0.1;
+demos/homogeneous_crw_jorge_data.walker.hpp:  std::vector<Vector<float>> directions_;
+demos/3.track_species_scavenging.cpp:  const Vector<float> dims(tracks.get_dimensions());
+demos/3.track_species_scavenging.cpp:  const float agent_radius(5);
+demos/5.chemokine_populate.cpp:  const Vector<float> dims(383, 383, 60);
+demos/5.chemokine_populate.cpp:  const float agent_radius(5);
+demos/6.track_id_species_trailing.cpp:  const Vector<float> dims(tracks.get_dimensions());
+demos/6.track_id_species_trailing.cpp:  const float agent_radius(5);
+demos/6.track_id_species_trailing.cpp:  const Vector<float> dims(tracks.get_dimensions());
+demos/6.track_id_species_trailing.cpp:  const float agent_radius(5);
+demos/4.track_species_trailing.cpp:  const Vector<float> dims(tracks.get_dimensions());
+demos/4.track_species_trailing.cpp:  const float agent_radius(5);
